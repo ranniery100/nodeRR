@@ -39,6 +39,6 @@ app.get("/usuarios", async(req,res) =>{
     
     return res.status(200).send(usuarios)
 })
-app.listen(process.env.PORT||3030, ()=> {
+app.listen(process.env.NODE_PORT||3030, ()=> {
     console.log("Servidor Rodando")
 })
